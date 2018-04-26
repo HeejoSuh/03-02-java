@@ -16,14 +16,13 @@ public class Factorial{
 	public int getFactorial(int inputNum) {   
     	//this is a recursive procedure printing out the sentence backwards
     	
-    	int oneLessNum, result;
+    	int result;
     
     	 if (inputNum==0 || inputNum==1) {
     		 //if factorial is 1
     		 return 1;
     	 } else {
     		 //if other factorial
-    		 oneLessNum = inputNum-1;
     		 
     		 result = getFactorial(inputNum-1) * inputNum;
     	 }
@@ -41,4 +40,3 @@ public class Factorial{
         System.out.println("The factorial of \'5\' is \'"+obj.getFactorial(5)+"\'.");  
     }    
 }
-
